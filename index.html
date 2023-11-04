@@ -1,26 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="darkMode.css">
+    <link rel="stylesheet" href="projects-backgrounds.css">
+    
+    <script src="toggleDarkMode.js" defer></script>
+
     <title>João Guilherme Aguiar Moreira</title>
 </head>
+
 <body>
     <header>
         <nav>
             <h1>João Guilherme Aguiar Moreira</h1>
 
             <ul>
-                <a href="#about-sect"><li>Sobre</li></a>
-                <a href="#contact"><li>Contato</li></a>
-                <a href="#projects"><li>Projetos</li></a>
+                <a href="#about-sect">
+                    <li>Sobre</li>
+                </a>
+                <a href="#contact">
+                    <li>Contato</li>
+                </a>
+                <a href="#projects">
+                    <li>Projetos</li>
+                </a>
+                <li class="light-dark">
+                    <label for="light-dark">
+                        <input type="checkbox" name="" id="light-dark">
+                        <div></div>
+                    </label>
+                </li>
             </ul>
         </nav>
     </header>
-    <main>
 
+    <main>
         <section id="about-sect">
             <h2>Sobre</h2>
             <p>
@@ -31,9 +51,12 @@
         <section id="contact">
             <div>
                 <ul>
-                    <!-- <a href=""><li><i class="fa-brands fa-facebook-f"></i></li></a> -->
-                    <a href="https://github.com/JoaoGuilherme7" target="_blank"><li><i class="fa-brands fa-github"></i></li></a>
-                    <a href="https://www.linkedin.com/in/jo%C3%A3o-guilherme-aguiar-moreira-16b717139/" target="_blank"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
+                    <a href="https://github.com/JoaoGuilherme7" target="_blank">
+                        <li><i class="fa-brands fa-github"></i></li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-guilherme-aguiar-moreira-16b717139/" target="_blank">
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    </a>
                 </ul>
             </div>
         </section>
@@ -42,27 +65,33 @@
 
             <h2>Projetos</h2>
             <div class="projects-box">
-                <a  href="https://joaoguilherme7.github.io/FundWebCEFET/" target="_blank">
-                    <div class="project-boxes" id="fund-web">
-                      <h3>Fundamentos da Web - CEFET</h3>
-                      <p>
-                        Atividades desenvolvidas nas aulas de Fundamentos da Web, disciplina ministrada pelo Professor Rafael Escalfoni do curso de Bacharelado em Sistemas de Informação do CEFET Nova Friburgo.
-                      </p>
-                    </div>
-                </a>
+                <div class="border-effect">
+                    <a href="https://joaoguilherme7.github.io/FundWebCEFET/" target="_blank">
+                        <div class="project-boxes" id="fund-web">
+                            <h3>Fundamentos da Web - CEFET</h3>
+                            <p>
+                                Atividades desenvolvidas nas aulas de Fundamentos da Web. <!-- disciplina ministrada pelo
+                                Professor Rafael Escalfoni do curso de Bacharelado em Sistemas de Informação do CEFET
+                                Nova Friburgo. -->
+                            </p>
+                        </div>
+                    </a>
+                </div>
 
-                <a href="https://joaoguilherme7.github.io/FrontendMentor/" target="_blank"> 
-                    <div class="project-boxes" id="frontend-mentor">
-                        <h3>Frontend Mentor Challenges</h3>
+                <div class="border-effect">
+                    <a href="https://joaoguilherme7.github.io/FrontendMentor/" target="_blank">
+                        <div class="project-boxes" id="frontend-mentor">
+                            <h3>Frontend Mentor Challenges</h3>
 
-                        <p>
-                            Desafios do Frontend Mentor reproduzidos por mim.
-                        </p>
-                    </div>
-                </a>
+                            <p>
+                                Desafios do Frontend Mentor reproduzidos por mim.
+                            </p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
-        
-    </div>
+    </main>
 </body>
+
 </html>

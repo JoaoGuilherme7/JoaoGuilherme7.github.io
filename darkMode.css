@@ -1,0 +1,13 @@
+/* DARKMODE */
+*{
+    transition: background .5s;
+}
+
+body.darkMode{
+    background-color: #222;
+    color: #fff;
+}
+
+section.darkMode{
+    background-color: #333;
+}
