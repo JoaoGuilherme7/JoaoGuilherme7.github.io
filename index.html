@@ -11,33 +11,41 @@
     <link rel="stylesheet" href="projects-backgrounds.css">
     
     <script src="toggleDarkMode.js" defer></script>
+    <script src="hamburguerMenu.js" defer></script>
 
     <title>João Guilherme Aguiar Moreira</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <h1>João Guilherme Aguiar Moreira</h1>
+        <h1>João Guilherme Aguiar Moreira</h1>
 
-            <ul>
-                <a href="#about-sect">
-                    <li>Sobre</li>
-                </a>
-                <a href="#contact">
-                    <li>Contato</li>
-                </a>
-                <a href="#projects">
-                    <li>Projetos</li>
-                </a>
-                <li class="light-dark">
-                    <label for="light-dark">
-                        <input type="checkbox" name="" id="light-dark">
-                        <div></div>
-                    </label>
-                </li>
-            </ul>
-        </nav>
+        <div class="menus">
+            <div class="hamburguer-menu ">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"> </div>
+            </div>
+            <nav>
+                <ul>
+                    <a href="#about-sect">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Contato</li>
+                    </a>
+                    <a href="#projects">
+                        <li>Projetos</li>
+                    </a>
+                    <li class="light-dark">
+                        <label for="light-dark">
+                            <input type="checkbox" name="" id="light-dark">
+                            <div></div>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -70,9 +78,7 @@
                         <div class="project-boxes" id="fund-web">
                             <h3>Fundamentos da Web - CEFET</h3>
                             <p>
-                                Atividades desenvolvidas nas aulas de Fundamentos da Web. <!-- disciplina ministrada pelo
-                                Professor Rafael Escalfoni do curso de Bacharelado em Sistemas de Informação do CEFET
-                                Nova Friburgo. -->
+                                Atividades desenvolvidas nas aulas de Fundamentos da Web. 
                             </p>
                         </div>
                     </a>

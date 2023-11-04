@@ -4,7 +4,8 @@ const hour = new Date().getHours();
 
 const darkFields = [
     ...document.querySelectorAll('section'),
-    select('body')
+    select('body'),
+    select('.menus')
 ];
 
 function select(selector) {
